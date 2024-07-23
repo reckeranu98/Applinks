@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         statAppBtn.setOnClickListener{
-            val launchIntent = packageManager.getLaunchIntentForPackage("com.lu.calculator")
+            val launchIntent = packageManager.getLaunchIntentForPackage("com.lu.calculatorapp")
             if (launchIntent != null) {
                 startActivity(launchIntent) //null pointer check in case package name was not found
             }
